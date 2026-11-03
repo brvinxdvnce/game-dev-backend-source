@@ -1,0 +1,6 @@
+@GameSessions.Presentation_HostAddress = http://localhost:5280
+
+GET {{GameSessions.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

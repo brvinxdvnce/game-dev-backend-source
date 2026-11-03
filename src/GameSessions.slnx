@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/GameSessionService/" />
+  <Folder Name="/src/Services/GameSessionService/src/">
+    <Project Path="src/Services/GameSessionService/src/GameSessions.Domain/GameSessions.Domain.csproj" />
+    <Project Path="src/Services/GameSessionService/src/GameSessions.Infrastructure/GameSessions.Infrastructure.csproj" />
+    <Project Path="src/Services/GameSessionService/src/GameSessions.Presentation/GameSessions.Presentation.csproj" />
+    <Project Path="src/Services/GameSessionService/src/GameSessions.Services/GameSessions.Services.csproj" />
+  </Folder>
+</Solution>
