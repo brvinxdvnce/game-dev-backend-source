@@ -1,11 +1,18 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/AccountsService/" />
+  <Folder Name="/src/Services/AccountsService/src/">
+    <Project Path="src/Services/AccountsService/src/AccountsService.Presentation/AccountsService.Presentation.csproj" />
+  </Folder>
   <Folder Name="/src/Services/GameSessionService/" />
   <Folder Name="/src/Services/GameSessionService/src/">
     <Project Path="src/Services/GameSessionService/src/GameSessions.Domain/GameSessions.Domain.csproj" />
     <Project Path="src/Services/GameSessionService/src/GameSessions.Infrastructure/GameSessions.Infrastructure.csproj" />
     <Project Path="src/Services/GameSessionService/src/GameSessions.Presentation/GameSessions.Presentation.csproj" />
     <Project Path="src/Services/GameSessionService/src/GameSessions.Services/GameSessions.Services.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/ResultStringResponses/ResultStringResponses.csproj" />
   </Folder>
 </Solution>
