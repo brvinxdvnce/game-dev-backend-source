@@ -13,6 +13,7 @@
     <Project Path="src/Services/GameSessionService/src/GameSessions.Services/GameSessions.Services.csproj" />
   </Folder>
   <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/DomainEvents/DomainEvents.csproj" />
     <Project Path="src/Shared/ResultStringResponses/ResultStringResponses.csproj" />
   </Folder>
 </Solution>

@@ -1,11 +1,18 @@
 using FluentValidation;
+using GameSessions.Infrastructure;
 using GameSessions.Presentation.Endpoints;
 using GameSessions.Services.Common.Behaviors;
 using GameSessions.Services.Sessions.Commands.CreateSession;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// TODO нормальное подключение, а не хакдкод
+builder.Services.AddDbContext<SessionsDbContext>(options => 
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddOpenApi();
 

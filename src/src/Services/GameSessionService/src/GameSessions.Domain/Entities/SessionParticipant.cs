@@ -5,7 +5,7 @@ namespace GameSessions.Domain.Entities;
 
 public class SessionParticipant
 {
-    public Guid Id { get; private set; }
+    public Guid UserId { get; private set; }
     public Guid SessionId { get; private set; }
     public string DisplayName { get; private set; } = default!;
     public Team Team { get; private set; }
@@ -21,7 +21,7 @@ public class SessionParticipant
 
         return Result.Success(new SessionParticipant
         {
-            Id = Guid.NewGuid(),
+            UserId = Guid.NewGuid(),
             SessionId = sessionId,
             DisplayName = displayName.Trim(),
             Team = team,

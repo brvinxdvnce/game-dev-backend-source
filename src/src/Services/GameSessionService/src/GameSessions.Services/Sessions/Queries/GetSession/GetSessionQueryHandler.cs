@@ -29,7 +29,7 @@ public sealed class GetSessionQueryHandler
             FinishedAt: session.FinishedAt,
             Participants: session.Participants
                 .Select(p => new ParticipantDto(
-                    p.Id,
+                    p.UserId,
                     p.DisplayName,
                     p.Team.ToString(),
                     p.Role.ToString(),

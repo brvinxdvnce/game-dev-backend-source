@@ -46,12 +46,12 @@ public sealed class JoinSessionCommandHandler
 
         _logger.LogInformation(
             "Participant {ParticipantId} ('{DisplayName}') joined session {SessionId} as {Team}/{Role}",
-            participantResult.Value.Id,
+            participantResult.Value.UserId,
             participantResult.Value.DisplayName,
             request.SessionId,
             participantResult.Value.Team,
             participantResult.Value.Role);
 
-        return Result.Success(participantResult.Value.Id);
+        return Result.Success(participantResult.Value.UserId);
     }
 }
